@@ -16,7 +16,7 @@ const Chatbot: React.FC = () => {
               size: "medium",
               iconColor: "white",
               customIconSrc:
-                "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
+                "https://raw.githubusercontent.com/twbs/icons/main/icons/robot.svg",
             },
             chatWindow: {
               welcomeMessage: "Hello! I am Jumel's AI Assistant. Ask me anything about his projects or skills.",
@@ -24,13 +24,13 @@ const Chatbot: React.FC = () => {
               height: 600,
               width: 350,
               fontSize: 16,
-              poweredByTextColor: "#303235",
+              poweredByTextColor: "#ffffff",
               botMessage: {
                 backgroundColor: "#f3f4f6",
                 textColor: "#303235",
                 showAvatar: true,
                 avatarSrc:
-                  "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
+                  "https://raw.githubusercontent.com/twbs/icons/main/icons/robot.svg",
               },
               userMessage: {
                 backgroundColor: "#0284c7",
