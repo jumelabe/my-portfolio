@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -20,15 +21,34 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setStatus("submitting");
 
-    // Simulate form submission
-    setTimeout(() => {
-      console.log("Form Submitted:", formData);
-      setStatus("success");
-      setFormData({ name: "", email: "", message: "" });
+    // ⚠️ IMPORTANT: Replace these with your actual EmailJS credentials
+    // Create an account at https://www.emailjs.com/
+    const serviceId = "service_y2m653g";
+    const templateId = "template_zm74k2l";
+    const publicKey = "q-oRdvWThgnYh0wA7";
 
-      // Reset status after 3 seconds
-      setTimeout(() => setStatus("idle"), 3000);
-    }, 1500);
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+      to_name: "Jumel Anthony Labe",
+    };
+
+    emailjs.send(serviceId, templateId, templateParams, publicKey).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setStatus("idle"), 5000);
+      },
+      (err) => {
+        console.error("FAILED...", err);
+        setStatus("idle");
+        alert(
+          "Failed to send message. Please check your internet connection or try again later."
+        );
+      }
+    );
   };
 
   return (
