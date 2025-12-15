@@ -21,8 +21,8 @@ const Chatbot: React.FC = () => {
             chatWindow: {
               welcomeMessage: "Hello! I am Jumel's AI Assistant. Ask me anything about his projects or skills.",
               backgroundColor: "#ffffff",
-              height: 700,
-              width: 400,
+              height: 600,
+              width: 350,
               fontSize: 16,
               poweredByTextColor: "#303235",
               botMessage: {
