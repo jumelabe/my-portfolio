@@ -6,7 +6,7 @@ const Chatbot: React.FC = () => {
       (module) => {
         const Chatbot = module.default;
         Chatbot.init({
-          chatflowid: "41de70da-f63d-4559-bdd4-66f91204ef02",
+          chatflowid: "8a371aa6-367d-440c-99f0-7a435df2b6d4",
           apiHost: "https://cloud.flowiseai.com",
           theme: {
             button: {
