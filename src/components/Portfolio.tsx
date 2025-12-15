@@ -23,8 +23,7 @@ const Portfolio: React.FC = () => {
     },
     {
       title: "HomeOwners Associations",
-      description:
-        "A management system for community homeowner associations.",
+      description: "A management system for community homeowner associations.",
       image: homeownersImage,
       repoLink: "https://github.com/ClydPardillo/HomeownersAssociation.git",
       demoLink: "",
@@ -42,14 +41,6 @@ const Portfolio: React.FC = () => {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="portfolio-links">
-                <a
-                  href={project.repoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-link"
-                >
-                  Code
-                </a>
                 {project.demoLink && (
                   <a
                     href={project.demoLink}
