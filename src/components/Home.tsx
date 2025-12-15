@@ -4,7 +4,7 @@ const Home: React.FC = () => {
   return (
     <section id="home" className="section home-section">
       <div className="container">
-        <h1>Jumel Anthony labe</h1>
+        <h1>Jumel Anthony Labe</h1>
         <p>I am a creative developer building amazing things.</p>
         <button
           onClick={() =>
