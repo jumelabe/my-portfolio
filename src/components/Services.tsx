@@ -1,10 +1,19 @@
-import React from 'react';
+import React from "react";
 
 const Services: React.FC = () => {
   const services = [
-    { title: 'Web Development', description: 'Building responsive and performant websites.' },
-    { title: 'UI/UX Design', description: 'Creating intuitive and beautiful user interfaces.' },
-    { title: 'Backend Solutions', description: 'Developing robust server-side logic and APIs.' },
+    {
+      title: "Web Development",
+      description: "Building responsive and performant websites.",
+    },
+    {
+      title: "UI/UX Design",
+      description: "Creating intuitive and beautiful user interfaces.",
+    },
+    {
+      title: "Backend Solutions",
+      description: "Developing robust server-side logic and APIs.",
+    },
   ];
 
   return (
