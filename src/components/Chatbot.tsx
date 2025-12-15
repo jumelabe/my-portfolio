@@ -2,14 +2,12 @@ import React, { useEffect } from "react";
 
 const Chatbot: React.FC = () => {
   useEffect(() => {
-    // This script will load the Flowise chatbot
-    // We will replace 'YOUR_FLOWISE_URL' with your actual deployed URL later
     import("https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js" as any).then(
       (module) => {
         const Chatbot = module.default;
         Chatbot.init({
-          chatflowid: "YOUR_CHATFLOW_ID", // We will fill this in later
-          apiHost: "YOUR_FLOWISE_API_HOST", // We will fill this in later
+          chatflowid: "41de70da-f63d-4559-bdd4-66f91204ef02",
+          apiHost: "https://cloud.flowiseai.com",
           theme: {
             button: {
               backgroundColor: "#0284c7",
@@ -54,7 +52,7 @@ const Chatbot: React.FC = () => {
     );
   }, []);
 
-  return null; // The script injects the bubble automatically
+  return null;
 };
 
 export default Chatbot;
