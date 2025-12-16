@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+# Jumel's Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with **React 19**, **TypeScript**, and **Vite**. This application serves as a digital resume, showcasing my academic journey, technical skills, and featured projects. It includes an integrated **AI Chatbot** powered by Flowise to answer visitor questions interactively.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://jumel-portfolio-wheat-eta-51.vercel.app/](https://jumel-portfolio-wheat-eta-51.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+*   **⚡ High Performance:** Built with Vite for lightning-fast HMR and build times.
+*   **🤖 AI Smart Assistant:** Integrated **Flowise RAG Chatbot** trained on my personal data (resume, skills, bio) to answer queries about me.
+*   **📱 Fully Responsive:** Adaptive design that looks great on desktops, tablets, and mobile devices.
+*   **🎨 Modern UI:** Clean and professional aesthetic using custom CSS.
+*   **📂 Project Showcase:** dedicated section highlighting key projects like *Sit-in Monitoring*, *CLEARCAUSE*, and *HomeOwners Associations*.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+*   **Frontend Framework:** [React 19](https://react.dev/)
+*   **Language:** [TypeScript](https://www.typescriptlang.org/)
+*   **Build Tool:** [Vite](https://vitejs.dev/)
+*   **AI Integration:** [FlowiseAI](https://flowiseai.com/) (Embedded Chat Widget)
+*   **Deployment:** [Vercel](https://vercel.com/)
+*   **Styling:** CSS3
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Project Structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+src/
+├── assets/         # Images and static assets
+├── components/     # Reusable UI components
+│   ├── Navbar.tsx      # Navigation bar
+│   ├── Home.tsx        # Hero section
+│   ├── About.tsx       # Bio and skills
+│   ├── Portfolio.tsx   # Project cards
+│   ├── Chatbot.tsx     # Flowise integration configuration
+│   └── ...
+├── App.tsx         # Main layout
+└── main.tsx        # Application entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🤖 Chatbot Integration
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The chatbot is powered by **FlowiseAI** and uses **RAG (Retrieval-Augmented Generation)** to provide accurate answers based on my specific context.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*   **Component:** `src/components/Chatbot.tsx`
+*   **Knowledge Base:** The bot is trained on data from `New_chatbot_knowledge.txt`.
+*   **Provider:** Cloud Flowise
+
+## 💻 Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+*   Node.js (v18 or higher)
+*   npm or yarn
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+    cd Portfolio_Final
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production:**
+    ```bash
+    npm run build
+    ```
+
+## 📄 License
+
+This project is for educational and showcase purposes.
