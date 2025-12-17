@@ -1,16 +1,23 @@
 import React from 'react';
 
 const About: React.FC = () => {
-  const skills = [
-    "Python",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "React",
-    "Tailwind CSS",
-    "Supabase",
-    "MySQL",
-    "SQLite3",
+  const skillCategories = [
+    {
+      category: "Languages",
+      items: ["Python", "JavaScript", "Java", "TypeScript"],
+    },
+    {
+      category: "Front End",
+      items: ["HTML", "CSS", "React", "Tailwind CSS"],
+    },
+    {
+      category: "Database",
+      items: ["Supabase", "MySQL", "SQLite3"],
+    },
+    {
+      category: "Tools",
+      items: ["Visual Studio Code", "GitHub", "Vercel"],
+    },
   ];
 
   return (
@@ -26,13 +33,18 @@ const About: React.FC = () => {
 
         <div className="skills-container">
           <h3>Skills & Technologies</h3>
-          <div className="skills-grid">
-            {skills.map((skill, index) => (
-              <span key={index} className="skill-badge">
-                {skill}
-              </span>
-            ))}
-          </div>
+          {skillCategories.map((group, index) => (
+            <div key={index} className="skill-category">
+              <h4>{group.category}</h4>
+              <div className="skills-grid">
+                {group.items.map((skill, idx) => (
+                  <span key={idx} className="skill-badge">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
