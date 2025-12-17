@@ -6,11 +6,10 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
-import './App.css';
 
 function App() {
   return (
-    <div className="app-container">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       <main>
         <Home />

@@ -6,10 +6,10 @@ Bio:
 Jumel is a creative developer passionate about building user-friendly and visually appealing applications. He is currently a senior student specializing in Information Technology. While he has experience with various technologies, he is actively expanding his skills in React and Tailwind CSS to master modern frontend development.
 
 Skills:
-- Languages: Python, JavaScript, HTML, CSS, SQL
+- Languages: Python, JavaScript, Java, TypeScript, HTML, CSS, SQL
 - Frameworks/Libraries: React, Tailwind CSS
 - Databases: Supabase, MySQL, SQLite3
-- Tools: VS Code, Git/GitHub, Vite
+- Tools: Visual Studio Code, GitHub, Vercel, Vite
 
 Featured Projects:
 
@@ -25,6 +25,7 @@ Featured Projects:
 
 3. HomeOwners Associations Management System
    - Description: A management system designed to help community homeowner associations manage members, dues, and announcements.
+   - Tech: C++, MySQL
    - Status: In Progress.
 
 Contact Info:
