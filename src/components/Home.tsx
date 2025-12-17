@@ -19,7 +19,7 @@ const Home: React.FC = () => {
         </h1>
         
         <p className="text-lg md:text-2xl max-w-2xl mx-auto mb-10 text-gray-500 font-light leading-relaxed">
-          I am a creative developer building <span className="font-semibold text-gray-700">user-friendly</span> and <span className="font-semibold text-gray-700">visually appealing</span> applications.
+          I am a creative developer building <span className="font-semibold text-primary">user-friendly</span> and <span className="font-semibold text-primary">visually appealing</span> applications.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">

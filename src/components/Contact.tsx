@@ -54,8 +54,8 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-24 md:py-32 px-6 bg-white">
       <div className="w-full max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark inline-block relative after:content-[''] after:block after:w-20 after:h-1.5 after:bg-accent after:mx-auto after:mt-4 after:rounded-full">
-            Get In Touch
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark mb-6 inline-block relative after:content-[''] after:block after:w-20 after:h-1.5 after:bg-accent after:mx-auto after:mt-4 after:rounded-full">
+            Contact Me
           </h2>
           <p className="text-lg text-gray-500 mt-6 max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? Feel free to reach out!
@@ -100,10 +100,10 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-bold text-neutral-dark text-lg mb-1">Socials</h3>
-                <p className="text-gray-500 mb-2">Check out my projects.</p>
+                <p className="text-gray-500 mb-2">Check out my profiles.</p>
                 <div className="flex gap-4">
                   <a href="https://github.com/jumelabe" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">GitHub</a>
-                  <span className="text-gray-300">|</span>
+                  <span className="text-gray-500">|</span>
                   <a href="https://www.linkedin.com/in/jumelabe" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">LinkedIn</a>
                 </div>
               </div>
